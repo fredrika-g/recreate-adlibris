@@ -13,7 +13,19 @@ main {
   /* justify-content: center; */
 }
 
-header {
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+img {
+  width: 100px;
+}
+#container > div:nth-child(1) > div:nth-child(2){
+  width: 500px;
+}
+header{
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -150,3 +162,4 @@ header {
   margin-left: 5%;
   gap: 0.5rem;
 }
+
