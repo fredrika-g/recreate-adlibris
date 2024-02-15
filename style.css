@@ -13,7 +13,6 @@ main {
   /* justify-content: center; */
 }
 
-
 .section-container {
   display: flex;
   flex-direction: column;
@@ -22,10 +21,10 @@ main {
 img {
   width: 100px;
 }
-#container > div:nth-child(1) > div:nth-child(2){
+#container > div:nth-child(1) > div:nth-child(2) {
   width: 500px;
 }
-header{
+header {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -163,3 +162,17 @@ header{
   gap: 0.5rem;
 }
 
+.left-aligned-content {
+  display: flex;
+  justify-content: end;
+  gap: 0.5rem;
+}
+
+.infoActions h3 {
+  text-align: center;
+}
+
+.views {
+  display: flex;
+  gap: 0.6rem;
+}
