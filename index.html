@@ -60,175 +60,179 @@
         </div>
       </section>
     </header>
-    <div class="container">
-      <section class="breadcrumbs">
-        <i class="fa-solid fa-home"></i>
-        <span>/</span>
-        <a href="#">Sök</a>
-        <span>/ Böcker</span>
-      </section>
-      <main class="main-container">
-        <aside>
-          <div class="wrapper">
-            <section class="accordion-content">
-              <h2><i class="fa-solid fa-sliders"></i> Filter</h2>
-              <div class="accordion" data-default="none">
-                <h3 class="accordion-heading">
-                  <button
-                    class="accordion-trigger"
-                    aria-controls="accordion-panel1"
-                    aria-expanded="false"
-                  >
-                    <div>
-                      <span>Kategorier</span>
-                      <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-                  </button>
-                </h3>
-                <div
-                  class="accordion-panel"
-                  id="accordion-panel1"
+    <main class="main-container">
+      <aside>
+        <div class="container">
+          <section class="breadcrumbs">
+            <i class="fa-solid fa-home"></i>
+            <span>/</span>
+            <a href="#">Sök</a>
+            <span>/ Böcker</span>
+          </section>
+        </div>
+        <div class="wrapper">
+          <section class="accordion-content">
+            <h2><i class="fa-solid fa-sliders"></i> Filter</h2>
+            <div class="accordion" data-default="none">
+              <h3 class="accordion-heading">
+                <button
+                  class="accordion-trigger"
+                  aria-controls="accordion-panel1"
                   aria-expanded="false"
-                  aria-hidden="true"
                 >
-                  <section class="filter-inputs">
+                  <div>
+                    <span>Kategorier</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                </button>
+              </h3>
+              <div
+                class="accordion-panel"
+                id="accordion-panel1"
+                aria-expanded="false"
+                aria-hidden="true"
+              >
+                <section class="filter-inputs">
+                  <div>
+                    <input type="checkbox" name="all" id="all" value="" />
+                    <label for="all">Alla kategorier</label>
+                  </div>
+                  <div class="typeCategory">
                     <div>
-                      <input type="checkbox" name="all" id="all" value="" />
-                      <label for="all">Alla kategorier</label>
+                      <input
+                        type="checkbox"
+                        name="books"
+                        id="books"
+                        value="books"
+                      />
+                      <label for="books">Böcker</label>
                     </div>
-                    <div class="typeCategory">
+                    <div class="typeOfBooks">
                       <div>
                         <input
                           type="checkbox"
-                          name="books"
-                          id="books"
-                          value="books"
+                          name="fiction"
+                          id="fiction"
+                          value="fiction"
                         />
-                        <label for="books">Böcker</label>
+                        <label for="fiction">Skönlitteratur</label>
                       </div>
-                      <div class="typeOfBooks">
-                        <div>
-                          <input
-                            type="checkbox"
-                            name="fiction"
-                            id="fiction"
-                            value="fiction"
-                          />
-                          <label for="fiction">Skönlitteratur</label>
-                        </div>
-                        <div>
-                          <input
-                            type="checkbox"
-                            name="kids"
-                            id="kids"
-                            value="kids"
-                          />
-                          <label for="kids">Barn & Ungdom</label>
-                        </div>
-                        <div>
-                          <input
-                            type="checkbox"
-                            name="geography"
-                            id="geography"
-                            value="geography"
-                          />
-                          <label for="geography">Geografiska områden</label>
-                        </div>
-                        <div>
-                          <input
-                            type="checkbox"
-                            name="philosophyAndReligion"
-                            id="philosophyAndReligion"
-                            value="philosophyAndReligion"
-                          />
-                          <label for="philosophyAndReligion"
-                            >Filosofi & religion</label
-                          >
-                        </div>
-                        <div>
-                          <input
-                            type="checkbox"
-                            name="psychology"
-                            id="psychology"
-                            value="psychology"
-                          />
-                          <label for="psychology">Psykologi & pedagogik</label>
-                        </div>
-                        <div>
-                          <input
-                            type="checkbox"
-                            name="artAndMusic"
-                            id="artAndMusic"
-                            value="artAndMusic"
-                          />
-                          <label for="artAndMusic">Konst & musik</label>
-                        </div>
-                        <div>
-                          <input
-                            type="checkbox"
-                            name="society"
-                            id="society"
-                            value="society"
-                          />
-                          <label for="society">Samhälle & politik</label>
-                        </div>
-                        <div>
-                          <input
-                            type="checkbox"
-                            name="economyAndLaw"
-                            id="economyAndLaw"
-                            value="economyAndLaw"
-                          />
-                          <label for="economyAndLaw">Ekonomi & juridik</label>
-                        </div>
-                        <div>
-                          <input
-                            type="checkbox"
-                            name="familyAndHealth"
-                            id="familyAndHealth"
-                            value="familyAndHealth"
-                          />
-                          <label for="familyAndHealth">Familj & hälsa</label>
-                        </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="kids"
+                          id="kids"
+                          value="kids"
+                        />
+                        <label for="kids">Barn & Ungdom</label>
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="geography"
+                          id="geography"
+                          value="geography"
+                        />
+                        <label for="geography">Geografiska områden</label>
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="philosophyAndReligion"
+                          id="philosophyAndReligion"
+                          value="philosophyAndReligion"
+                        />
+                        <label for="philosophyAndReligion"
+                          >Filosofi & religion</label
+                        >
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="psychology"
+                          id="psychology"
+                          value="psychology"
+                        />
+                        <label for="psychology">Psykologi & pedagogik</label>
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="artAndMusic"
+                          id="artAndMusic"
+                          value="artAndMusic"
+                        />
+                        <label for="artAndMusic">Konst & musik</label>
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="society"
+                          id="society"
+                          value="society"
+                        />
+                        <label for="society">Samhälle & politik</label>
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="economyAndLaw"
+                          id="economyAndLaw"
+                          value="economyAndLaw"
+                        />
+                        <label for="economyAndLaw">Ekonomi & juridik</label>
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="familyAndHealth"
+                          id="familyAndHealth"
+                          value="familyAndHealth"
+                        />
+                        <label for="familyAndHealth">Familj & hälsa</label>
                       </div>
                     </div>
-                  </section>
-                </div>
-                <h3 class="accordion-heading">
-                  <button
-                    class="accordion-trigger"
-                    aria-controls="accordion-panel2"
-                    aria-expanded="false"
-                  >
-                    <div>
-                      <span>Utgivningsdatum</span>
-                      <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-                  </button>
-                </h3>
-                <div
-                  class="accordion-panel"
-                  id="accordion-panel2"
-                  aria-expanded="false"
-                  aria-hidden="true"
-                >
-                  <section class="filter-inputs">
-                    <a href="#" data-date="2024">2024</a>
-                    <a href="#" data-date="2023">2023</a>
-                    <a href="#" data-date="2022">2022</a>
-                  </section>
-                </div>
-               
+                  </div>
+                </section>
               </div>
-            </section>
-          </div>
-          <!-- filtrering -->
-        </aside>
+              <h3 class="accordion-heading">
+                <button
+                  class="accordion-trigger"
+                  aria-controls="accordion-panel2"
+                  aria-expanded="false"
+                >
+                  <div>
+                    <span>Utgivningsdatum</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                </button>
+              </h3>
+              <div
+                class="accordion-panel"
+                id="accordion-panel2"
+                aria-expanded="false"
+                aria-hidden="true"
+              >
+                <section class="filter-inputs">
+                  <a href="#" data-date="2024">2024</a>
+                  <a href="#" data-date="2023">2023</a>
+                  <a href="#" data-date="2022">2022</a>
+                </section>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- filtrering -->
+      </aside>
       <section>
         <div>
           <div class="section" id="section">
             <div class="infoActions">
-              <h3>Sökt på: <span id="categoryName"></span><span id="chosenCategory"></span></h3>
+              <h3>
+                Sökt på: <span id="categoryName"></span>Kategori: Böcker<span
+                  id="chosenCategory"
+                ></span>
+              </h3>
               <div class="left-aligned-content">
                 <select name="sortBy" id="sortBy">
                   <option value="price">Pris</option>
@@ -239,16 +243,15 @@
                 <div class="views">
                   <span>Välj visningsvy:</span>
                   <i class="fa-solid fa-list"></i>
-                  <i class="fa-solid fa-grip"></i>             
-                 </div>
+                  <i class="fa-solid fa-grip"></i>
+                </div>
               </div>
               <h4>totalt <span>0</span> träffar</h4>
             </div>
           </div>
-        <!-- content -->
-        <div class='main-right'>
-          <div class="section-wrap" id="wrap">
-            </div>
+          <!-- content -->
+          <div class="main-right">
+            <div class="section-wrap" id="wrap"></div>
           </div>
         </div>
       </section>

@@ -127,6 +127,8 @@ input[type="text"]{
 
 .accordion-content {
   padding-inline: 2rem;
+  width: 400px;
+  margin-top: 20px;
 }
 
 .accordion {
@@ -137,7 +139,6 @@ input[type="text"]{
 .accordion-heading {
   border: 1px solid #4464c2;
 }
-
 .accordion-trigger {
   width: 100%;
   border: 0;
@@ -154,7 +155,6 @@ input[type="text"]{
 }
 
 .accordion-trigger::after {
-  content: "\2193";
   position: absolute;
   right: 1rem;
 }
@@ -206,7 +206,9 @@ input[type="text"]{
   margin-left: 5%;
 }
 
-
+aside{
+  padding-top: 30px;
+}
 
 .section {
   display: flex;
