@@ -17,6 +17,8 @@ main {
 header{
   display: flex;
   justify-content: center;
+  flex-direction: column;
+
 }
 
 #sale-section {
@@ -26,6 +28,18 @@ header{
   justify-content: center;
   align-items: center;
   min-width: 100%;
+}
+
+#main-header{
+  display: flex;
+  flex-direction: row;
+  background: white;
+}
+
+#logo{
+  color: red;
+}
+
 
   
   
