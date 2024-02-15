@@ -18,12 +18,14 @@
         <p>10% på alla spel med kod SPEL10 >></p>
       </section>
       <section id="main-header">
-        <div id="hamburger">
-          <p>MENY</p>
+        <div id="container-left">
+          <span id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+            <p>MENY</p>
+          </span>
+          <a href="#" id="logo">Adlibris</a>
         </div>
-        <div id="logo">
-          <strong>Adlibris</strong>
-        </div>
+
         <div id="header-dropdown">
           <label for="categories"></label>
           <select name="categories" id="categories">
@@ -37,9 +39,24 @@
             <option value="spelPussel">Spel & Pussel</option>
           </select>
           <input type="text" placeholder="Sök" />
-          <span id="search">
+          <button id="search">
             <i class="fa-solid fa-magnifying-glass"></i>
-          </span>
+          </button>
+        </div>
+
+        <div id="container-right">
+          <div id="logIn">
+            <a href="#" id="iconLogIn">
+              <i class="fa-solid fa-person"></i>
+              <span id="headerIconText">LOGGA IN</span>
+            </a>
+          </div>
+
+          <div id="cart"></div>
+          <a href="#" id="iconCart">
+            <i class="fa-solid fa-basket-shopping"></i>
+            <span id="headerIconText">VARUKORG</span>
+          </a>
         </div>
       </section>
     </header>

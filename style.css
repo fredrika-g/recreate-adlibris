@@ -13,6 +13,15 @@ main {
   /* justify-content: center; */
 }
 
+
+header{
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+}
+
+#sale-section {
+  background: red;
+}
 .section-container {
   display: flex;
   flex-direction: column;
@@ -44,17 +53,89 @@ header {
 #sale-section {
   display: flex;
   background: #e0001b;
+
   color: white;
-  justify-content: center;
-  align-items: center;
-  min-width: 100%;
+  text-align: center;
+  padding: 10px 0;
 }
 
 #main-header {
   display: flex;
-  flex-direction: row;
-  background: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+
 }
+
+#container-left{
+  display: flex;
+  align-items: center;
+}
+
+#hamburger{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  border: none;
+  margin-right:20px;
+}
+
+
+#logo{
+  color: red;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: large;
+  margin-right: 20px;
+}
+
+#header-dropdown{
+  display: flex;
+  align-items: center;
+}
+
+#categories,
+input[type="text"]{
+  margin-right: 10px;
+  padding: 5px;
+}
+
+#search{
+  background: red;
+  color: #fff;
+  border:none;
+  padding: 5px;
+  cursor: pointer;
+} 
+
+#container-right{
+  display: flex;
+  align-items: center;
+}
+
+#iconLogIn, 
+#iconCart{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+  border: none;
+  margin-left: 20px;
+}
+
+#iconLogIn i, 
+#iconCart i{
+  margin-bottom: 5px;
+}
+
+#logIn,
+#cart{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+  
 
 #logo {
   color: #e0001b;
@@ -68,6 +149,7 @@ header {
 .breadcrumbs i {
   color: #0e61c1;
 }
+
 
 /* filtering section */
 .wrapper {
