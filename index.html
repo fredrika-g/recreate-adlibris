@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recreate Adlibris</title>
+    <script
+      src="https://kit.fontawesome.com/639b9aff2e.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
@@ -13,7 +17,31 @@
       <section id="sale-section">
         <p>10% på alla spel med kod SPEL10 >></p>
       </section>
-      <section id="main-header"></section>
+      <section id="main-header">
+        <div id="hamburger">
+          <p>MENY</p>
+        </div>
+        <div id="logo">
+          <strong>Adlibris</strong>
+        </div>
+        <div id="header-dropdown">
+          <label for="categories"></label>
+          <select name="categories" id="categories">
+            <option value="">Kategorier</option>
+            <option value="barnpyssel">Barnpyssel</option>
+            <option value="festPresenter">Fest & presenter</option>
+            <option value="garnStickning">Garn & Stickning</option>
+            <option value="papperKontor">Papper & Kontor</option>
+            <option value="konstmaterial">Konstnärsmaterial & DIY</option>
+            <option value="leksaker">Leksaker</option>
+            <option value="spelPussel">Spel & Pussel</option>
+          </select>
+          <input type="text" placeholder="Sök" />
+          <span id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+        </div>
+      </section>
     </header>
     <main>
       <aside>
