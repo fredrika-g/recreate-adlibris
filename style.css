@@ -97,3 +97,22 @@ header{
   color: #fff;
 
 }
+
+.filter-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.typeCategory {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.typeOfBooks {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: 5%;
+}
