@@ -12,3 +12,18 @@ main {
   display: flex;
   justify-content: center;
 }
+
+header{
+  display: flex;
+  justify-content: center;
+}
+
+#sale-section {
+  display: flex;
+  background: red;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+
+}
