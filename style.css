@@ -14,20 +14,36 @@ main {
 }
 
 
-
+.section {
+  display: flex;
+  flex-direction: row;
+}
 
 .section-container {
   display: flex;
+  flex-direction: row;
+  border-bottom: 0.5px solid gray;
+  gap: 20px;
+  padding: 20px;
+}
+.section-wrap {
+  display: flex;
   flex-direction: column;
-  border: 1px solid black;
 }
 img {
   width: 100px;
 }
-#container > div:nth-child(1) > div:nth-child(2){
+div.section-bookdetail{
   width: 500px;
 }
-=======
+button {
+  background: #ED1C25;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
 header{
   display: flex;
   justify-content: center;

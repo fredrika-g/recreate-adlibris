@@ -42,7 +42,7 @@ const bookData = [
 ]
 
 // 获取要更新的元素
-const container = document.getElementById("container");
+const wrap= document.querySelector("#wrap");
 
 // 循环遍历书籍数据
 bookData.forEach(book => {
@@ -113,8 +113,14 @@ bookData.forEach(book => {
     bookElement.appendChild(priceElement);
 
     // 将书籍元素添加到页面中
-    container.appendChild(bookElement);
+    wrap.appendChild(bookElement);
 });
+
+
+
+
+
+
 
 // filtering section
 
