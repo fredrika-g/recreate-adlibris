@@ -46,16 +46,17 @@ header{
   
 /* filtering section */
 .wrapper {
-  width: min(65rem, 100% - 3rem);
+  /* width: min(65rem, 100% - 3rem); */
   margin-inline: auto;
 }
 
-.accordion-content {
+/* .accordion-content {
   padding-inline: 2rem;
-}
+} */
 
 .accordion {
   list-style: none;
+  min-width: 15rem;
   width: 80%;
 }
 
@@ -76,12 +77,6 @@ header{
   position: relative;
 
   cursor: pointer;
-}
-
-.accordion-trigger::after {
-  content: "\2193";
-  position: absolute;
-  right: 1rem;
 }
 
 .accordion-panel {
@@ -115,6 +110,7 @@ header{
 .filter-inputs {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
 }
 
 .typeCategory {
@@ -122,6 +118,7 @@ header{
   flex-direction: column;
   width: 90%;
   margin-left: 5%;
+  gap: 0.5rem;
 }
 
 .typeOfBooks {
@@ -129,4 +126,5 @@ header{
   flex-direction: column;
   width: 90%;
   margin-left: 5%;
+  gap: 0.5rem;
 }
