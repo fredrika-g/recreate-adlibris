@@ -17,8 +17,78 @@
     </header>
     <main>
       <aside>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="wrapper">
+          <section class="accordion-content">
+            <h2>Filter</h2>
+            <div class="accordion" data-default="none">
+              <h3 class="accordion-heading">
+                <button
+                  class="accordion-trigger"
+                  aria-controls="accordion-panel1"
+                  aria-expanded="false"
+                >
+                  Chapter 1
+                </button>
+              </h3>
+              <div
+                class="accordion-panel"
+                id="accordion-panel1"
+                aria-expanded="false"
+                aria-hidden="true"
+              >
+                <p>
+                  Here is the first panel of content. <br /><br />
+
+                  This particular accordion example can have multiple opened
+                  panels at a time, or every panel closed.
+                </p>
+              </div>
+
+              <h3 class="accordion-heading">
+                <button
+                  class="accordion-trigger"
+                  aria-controls="accordion-panel2"
+                  aria-expanded="false"
+                >
+                  Chapter 2
+                </button>
+              </h3>
+              <div
+                class="accordion-panel"
+                id="accordion-panel2"
+                aria-expanded="false"
+                aria-hidden="true"
+              >
+                <p>
+                  By using the data-multi attribute, multiple panels can be
+                  opened at once.
+                </p>
+              </div>
+
+              <h3 class="accordion-heading">
+                <button
+                  class="accordion-trigger"
+                  aria-controls="accordion-panel3"
+                  aria-expanded="false"
+                >
+                  Chapter 3
+                </button>
+              </h3>
+              <div
+                class="accordion-panel"
+                id="accordion-panel3"
+                aria-expanded="false"
+                aria-hidden="true"
+              >
+                <p>
+                  The data-default="none" attribute is used to indicate that no
+                  panel will be open by default, when the accordion is initially
+                  rendered.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
         <!-- filtrering -->
       </aside>
       <section>
