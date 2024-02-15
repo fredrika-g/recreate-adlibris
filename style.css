@@ -10,13 +10,24 @@ body {
 
 main {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
+
 
 
 .section {
   display: flex;
   flex-direction: row;
+}
+
+
+header{
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+}
+
+#sale-section {
+  background: red;
 }
 
 .section-container {
@@ -33,6 +44,7 @@ main {
 img {
   width: 100px;
 }
+
 div.section-bookdetail{
   width: 500px;
 }
@@ -45,35 +57,128 @@ button {
 }
 
 header{
+
+#container > div:nth-child(1) > div:nth-child(2) {
+  width: 500px;
+}
+header {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
 
+.container a {
+  color: #0e61c1;
+}
+
+.container {
+  margin-inline: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
 
 #sale-section {
   display: flex;
-  background: red;
+  background: #e0001b;
+
   color: white;
-  justify-content: center;
-  align-items: center;
-  min-width: 100%;
+  text-align: center;
+  padding: 10px 0;
 }
 
-#main-header{
+#main-header {
   display: flex;
-  flex-direction: row;
-  background: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+
 }
+
+#container-left{
+  display: flex;
+  align-items: center;
+}
+
+#hamburger{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  border: none;
+  margin-right:20px;
+}
+
 
 #logo{
   color: red;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: large;
+  margin-right: 20px;
+}
+
+#header-dropdown{
+  display: flex;
+  align-items: center;
+}
+
+#categories,
+input[type="text"]{
+  margin-right: 10px;
+  padding: 5px;
+}
+
+#search{
+  background: red;
+  color: #fff;
+  border:none;
+  padding: 5px;
+  cursor: pointer;
+} 
+
+#container-right{
+  display: flex;
+  align-items: center;
+}
+
+#iconLogIn, 
+#iconCart{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+  border: none;
+  margin-left: 20px;
+}
+
+#iconLogIn i, 
+#iconCart i{
+  margin-bottom: 5px;
+}
+
+#logIn,
+#cart{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+  
+
+#logo {
+  color: #e0001b;
+}
+
+.breadcrumbs {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.breadcrumbs i {
+  color: #0e61c1;
 }
 
 
-  
-  
-  
 /* filtering section */
 .wrapper {
   /* width: min(65rem, 100% - 3rem); */
@@ -90,8 +195,14 @@ header{
   width: 80%;
 }
 
+.accordion-content {
+  border: 1px solid #c4c4c4;
+  border-radius: 2px;
+}
+
 .accordion-heading {
-  border: 1px solid #4464c2;
+  border-top: 1px solid #c4c4c4;
+  padding: 0.2rem 0.4rem;
 }
 
 .accordion-trigger {
@@ -99,7 +210,7 @@ header{
   border: 0;
 
   background-color: #fafafa;
-  color: #4464c2;
+  color: #141414;
   text-align: left;
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
@@ -109,10 +220,14 @@ header{
   cursor: pointer;
 }
 
+.accordion-trigger div {
+  display: flex;
+  justify-content: space-between;
+}
 .accordion-panel {
   position: relative;
   max-height: 0vh;
-  background: inherit;
+  background-color: #efefef;
 
   visibility: hidden;
 
@@ -125,22 +240,20 @@ header{
   max-height: 100vh;
 }
 
-.accordion-trigger[aria-expanded="true"] {
-  background: #4464c2;
-  color: #fff;
-}
-
-.accordion-trigger:hover,
-.accordion-trigger:focus-visible {
-  background: #0e3b5e;
-  color: #fff;
-
+.accordion-content h2 {
+  background-color: #c4c4c4;
+  padding: 0.4rem 0.7rem;
+  font-size: 1rem;
 }
 
 .filter-inputs {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.filter-inputs * {
+  color: #0e61c1;
 }
 
 .typeCategory {
@@ -159,3 +272,17 @@ header{
   gap: 0.5rem;
 }
 
+.left-aligned-content {
+  display: flex;
+  justify-content: end;
+  gap: 0.5rem;
+}
+
+.infoActions h3 {
+  text-align: center;
+}
+
+.views {
+  display: flex;
+  gap: 0.6rem;
+}
