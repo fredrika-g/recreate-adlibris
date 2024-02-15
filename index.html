@@ -31,7 +31,7 @@
                   aria-controls="accordion-panel1"
                   aria-expanded="false"
                 >
-                  Chapter 1
+                  Kategorier
                 </button>
               </h3>
               <div
@@ -40,12 +40,92 @@
                 aria-expanded="false"
                 aria-hidden="true"
               >
-                <p>
-                  Here is the first panel of content. <br /><br />
-
-                  This particular accordion example can have multiple opened
-                  panels at a time, or every panel closed.
-                </p>
+                <section class="filter-inputs">
+                  <div>
+                    <input type="checkbox" name="all" id="all" value="" />
+                    <label for="all">Alla kategorier</label>
+                  </div>
+                  <div class="typeCategory">
+                    <div>
+                      <input
+                        type="checkbox"
+                        name="books"
+                        id="books"
+                        value="books"
+                      />
+                      <label for="books">Böcker</label>
+                    </div>
+                    <div class="typeOfBooks">
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="fiction"
+                          id="fiction"
+                          value="fiction"
+                        />
+                        <label for="fiction">Skönlitteratur</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="kids" id="kids" />
+                        <label for="kids">Barn & Ungdom</label>
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="geography"
+                          id="geography"
+                        />
+                        <label for="geography">Geografiska områden</label>
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="philosophyAndReligion"
+                          id="philosophyAndReligion"
+                        />
+                        <label for="philosophyAndReligion"
+                          >Filosofi & religion</label
+                        >
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="psychology"
+                          id="psychology"
+                        />
+                        <label for="psychology">Psykologi & pedagogik</label>
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="artAndMusic"
+                          id="artAndMusic"
+                        />
+                        <label for="artAndMusic">Konst & musik</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="society" id="society" />
+                        <label for="society">Samhälle & politik</label>
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="economyAndLaw"
+                          id="economyAndLaw"
+                        />
+                        <label for="economyAndLaw">Ekonomi & juridik</label>
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="familyAndHealth"
+                          id="familyAndHealth"
+                        />
+                        <label for="familyAndHealth">Familj & hälsa</label>
+                      </div>
+                    </div>
+                  </div>
+                </section>
               </div>
 
               <h3 class="accordion-heading">
@@ -54,7 +134,7 @@
                   aria-controls="accordion-panel2"
                   aria-expanded="false"
                 >
-                  Chapter 2
+                  Utgivningsdatum
                 </button>
               </h3>
               <div
@@ -69,7 +149,7 @@
                 </p>
               </div>
 
-              <h3 class="accordion-heading">
+              <!-- <h3 class="accordion-heading">
                 <button
                   class="accordion-trigger"
                   aria-controls="accordion-panel3"
@@ -89,7 +169,7 @@
                   panel will be open by default, when the accordion is initially
                   rendered.
                 </p>
-              </div>
+              </div> -->
             </div>
           </section>
         </div>
