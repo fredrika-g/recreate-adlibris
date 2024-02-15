@@ -13,6 +13,23 @@ main {
   justify-content: center;
 }
 
+
+header{
+  display: flex;
+  justify-content: center;
+}
+
+#sale-section {
+  display: flex;
+  background: red;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+
+  
+  
+  
 /* filtering section */
 .wrapper {
   width: min(65rem, 100% - 3rem);
@@ -78,4 +95,5 @@ main {
 .accordion-trigger:focus-visible {
   background: #0e3b5e;
   color: #fff;
+
 }
