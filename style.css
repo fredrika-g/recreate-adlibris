@@ -15,48 +15,8 @@ main {
 
 
 
-.section {
-  display: flex;
-  flex-direction: row;
-}
 
 
-header{
-  background-color: #f8f8f8;
-  padding: 10px 20px;
-}
-
-#sale-section {
-  background: red;
-}
-
-.section-container {
-  display: flex;
-  flex-direction: row;
-  border-bottom: 0.5px solid gray;
-  gap: 20px;
-  padding: 20px;
-}
-.section-wrap {
-  display: flex;
-  flex-direction: column;
-}
-img {
-  width: 100px;
-}
-
-div.section-bookdetail{
-  width: 500px;
-}
-button {
-  background: #ED1C25;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-
-header{
 
 #container > div:nth-child(1) > div:nth-child(2) {
   width: 500px;
@@ -180,6 +140,12 @@ input[type="text"]{
 
 
 /* filtering section */
+.section{
+  display: flex;
+  justify-content: space-around;
+  width: 800px;
+  margin: 50px;
+}
 .wrapper {
   /* width: min(65rem, 100% - 3rem); */
   margin-inline: auto;
@@ -285,4 +251,47 @@ input[type="text"]{
 .views {
   display: flex;
   gap: 0.6rem;
+}
+
+
+
+.section {
+  display: flex;
+  flex-direction: row;
+}
+
+
+header{
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+}
+
+#sale-section {
+  background: red;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 0.5px solid gray;
+  gap: 20px;
+  padding: 20px;
+}
+.section-wrap {
+  display: flex;
+  flex-direction: column;
+}
+img {
+  width: 100px;
+}
+
+div.section-bookdetail{
+  width: 500px;
+}
+button {
+  background: #ED1C25;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
 }

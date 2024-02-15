@@ -38,6 +38,45 @@ const bookData = [
     date: "2022",
     category: "kids",
   },
+  {
+    picture:
+      "https://s1.adlibris.com/images/68338711/vad-vi-ater-om-ultraprocessad-mat-vad-den-gor-med-oss-och-varfor-vi-inte-kan-sluta-ata-den.jpg",
+    bookname:
+      "Vad vi äter : om ultraprocessad mat, vad den gör med oss och varför vi inte kan sluta äta den",
+    author: "Chris van Tulleken",
+    bookpublisher: "Kartonnage, 2024, Svenska, ISBN 9789100804633",
+    bookinfo:
+      "Vi har trätt in i en ny era där större delen av vår kost kommer från en helt ny uppsättning ämnen som kallas ultraprocessade – alltså livsmedel som hårdbearbetats industriellt. Men …",
+    startprice: "Från 150 kr",
+    price: { kartonnage: "249kr", "E-bok": "150kr", ljudbok: "94kr" },
+    date: "2024",
+    category: "familyAndHealth",
+  },
+  {
+    picture:
+      "https://s2.adlibris.com/images/65364021/doda-kvinnor-forlater-inte.jpg",
+    bookname: "Döda kvinnor förlåter inte",
+    author: "Katarina Wennstam",
+    bookpublisher: "Inbunden, 2023, Svenska, ISBN 9789189750081",
+    bookinfo:
+      "Första delen av SekelskiftesmordenFyra kvinnor ur olika samhällsklasser bor alla i samma fastighet på Södermalm. De förs samman av ett fruktansvärt dödsfall på den gemensamma …",
+    startprice: "Från 94 kr",
+    price: { kartonnage: "95kr", "E-bok": "94kr", ljudbok: "94kr" },
+    date: "2023",
+    category: "fiction",
+  },
+  {
+    picture: "https://s1.adlibris.com/images/63163507/nordiska-djur-pekbok.jpg",
+    bookname: "Nordiska djur : pekbok",
+    author: "Emma Jansson",
+    bookpublisher: "0-3 år Inbunden, 2022, Svenska, ISBN 9789189083516",
+    bookinfo:
+      "Nu kommer äntligen den populära boken Mina första nordiska djur i en pekboksversion. Lär dig känna igen älgen, järven, vildsvinet, bävern, Rödräven och skogsmusen för att nämna …",
+    startprice: "",
+    price: { kartonnage: "59kr", "E-bok": "", ljudbok: "" },
+    date: "2022",
+    category: "kids",
+  },
 ];
 
 // 获取要更新的元素
