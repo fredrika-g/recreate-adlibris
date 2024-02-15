@@ -41,79 +41,86 @@ const bookData = [
 ];
 
 // 获取要更新的元素
-const container = document.getElementById("container");
+const wrap= document.querySelector("#wrap");
 
 // 循环遍历书籍数据
-bookData.forEach((book) => {
-  // 创建新的书籍元素
-  const bookElement = document.createElement("div");
-  bookElement.classList.add("section-container");
 
-  // 创建书籍图片元素
-  const imgElement = document.createElement("img");
-  imgElement.classList.add("bookpicture");
-  imgElement.src = book.picture;
-  imgElement.alt = "Book Cover";
-  bookElement.appendChild(imgElement);
+bookData.forEach(book => {
+    // 创建新的书籍元素
+    const bookElement = document.createElement("div");
+    bookElement.classList.add("section-container");
 
-  // 创建书籍详情元素
-  const detailElement = document.createElement("div");
-  detailElement.classList.add("section-bookdetail");
+    // 创建书籍图片元素
+    const imgElement = document.createElement("img");
+    imgElement.classList.add("bookpicture");
+    imgElement.src = book.picture;
+    imgElement.alt = "Book Cover";
+    bookElement.appendChild(imgElement);
 
-  // 添加书籍标题
-  const titleElement = document.createElement("h3");
-  titleElement.classList.add("section-title");
-  titleElement.textContent = book.bookname;
-  detailElement.appendChild(titleElement);
+    // 创建书籍详情元素
+    const detailElement = document.createElement("div");
+    detailElement.classList.add("section-bookdetail");
 
-  // 添加作者
-  const authorElement = document.createElement("p");
-  authorElement.classList.add("section-author");
-  authorElement.textContent = "Author: " + book.author;
-  detailElement.appendChild(authorElement);
+    // 添加书籍标题
+    const titleElement = document.createElement("h3");
+    titleElement.classList.add("section-title");
+    titleElement.textContent = book.bookname;
+    detailElement.appendChild(titleElement);
 
-  // 添加出版商
-  const publisherElement = document.createElement("p");
-  publisherElement.classList.add("section-publisher");
-  publisherElement.textContent = "Publisher: " + book.bookpublisher;
-  detailElement.appendChild(publisherElement);
+    // 添加作者
+    const authorElement = document.createElement("p");
+    authorElement.classList.add("section-author");
+    authorElement.textContent = "Author: " + book.author;
+    detailElement.appendChild(authorElement);
 
-  // 添加书籍信息
-  const bookinfoElement = document.createElement("p");
-  bookinfoElement.classList.add("section-bookinfo");
-  bookinfoElement.textContent = book.bookinfo;
-  detailElement.appendChild(bookinfoElement);
+    // 添加出版商
+    const publisherElement = document.createElement("p");
+    publisherElement.classList.add("section-publisher");
+    publisherElement.textContent = "Publisher: " + book.bookpublisher;
+    detailElement.appendChild(publisherElement);
 
-  // 添加起始价格
-  const startpriceElement = document.createElement("p");
-  startpriceElement.classList.add("price");
-  startpriceElement.textContent = book.startprice;
-  detailElement.appendChild(startpriceElement);
+    // 添加书籍信息
+    const bookinfoElement = document.createElement("p");
+    bookinfoElement.classList.add("section-bookinfo");
+    bookinfoElement.textContent = book.bookinfo;
+    detailElement.appendChild(bookinfoElement);
 
-  bookElement.appendChild(detailElement);
+    // 添加起始价格
+    const startpriceElement = document.createElement("p");
+    startpriceElement.classList.add("price");
+    startpriceElement.textContent = book.startprice;
+    detailElement.appendChild(startpriceElement);
 
-  // 添加不同格式的价格和按钮
-  const priceElement = document.createElement("div");
+    bookElement.appendChild(detailElement);
 
-  Object.keys(book.price).forEach((format) => {
-    const priceItemElement = document.createElement("div");
-    const priceValueElement = document.createElement("p");
-    priceValueElement.textContent = format + ": " + book.price[format];
-    priceItemElement.appendChild(priceValueElement);
+    // 添加不同格式的价格和按钮
+    const priceElement = document.createElement("div");
 
-    const buttonElement = document.createElement("button");
-    buttonElement.textContent = "Buy " + format;
-    buttonElement.id = format + "Btn";
-    priceItemElement.appendChild(buttonElement);
+    Object.keys(book.price).forEach(format => {
+        const priceItemElement = document.createElement("div");
+        const priceValueElement = document.createElement("p");
+        priceValueElement.textContent = format + ": " + book.price[format];
+        priceItemElement.appendChild(priceValueElement);
+        
+        const buttonElement = document.createElement("button");
+        buttonElement.textContent = "Buy " + format;
+        buttonElement.id = format + "Btn";
+        priceItemElement.appendChild(buttonElement);
 
-    priceElement.appendChild(priceItemElement);
-  });
+        priceElement.appendChild(priceItemElement);
+    });
 
-  bookElement.appendChild(priceElement);
+    bookElement.appendChild(priceElement);
 
-  // 将书籍元素添加到页面中
-  container.appendChild(bookElement);
+    // 将书籍元素添加到页面中
+    wrap.appendChild(bookElement);
 });
+
+
+
+
+
+
 
 // filtering section
 
