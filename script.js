@@ -1,3 +1,4 @@
+
 const bookData = [
     {
         picture: "https://s1.adlibris.com/images/68338711/vad-vi-ater-om-ultraprocessad-mat-vad-den-gor-med-oss-och-varfor-vi-inte-kan-sluta-ata-den.jpg",
@@ -114,3 +115,28 @@ bookData.forEach(book => {
     // 将书籍元素添加到页面中
     container.appendChild(bookElement);
 });
+
+// filtering section
+
+const accordionTriggers = document.querySelectorAll(".accordion-trigger");
+
+accordionTriggers.forEach((button) =>
+  button.addEventListener("click", function () {
+    const buttonControls = button.getAttribute("aria-controls");
+
+    const clickedPanel = document.getElementById(buttonControls);
+
+    const visibility = button.getAttribute("aria-expanded");
+
+    if (visibility === "false") {
+      button.setAttribute("aria-expanded", true);
+      clickedPanel.setAttribute("aria-expanded", true);
+      clickedPanel.setAttribute("aria-hidden", false);
+    } else if (visibility === "true") {
+      button.setAttribute("aria-expanded", false);
+      clickedPanel.setAttribute("aria-expanded", false);
+      clickedPanel.setAttribute("aria-hidden", true);
+    }
+  })
+);
+

@@ -15,6 +15,7 @@ main {
 
 
 
+
 .section-container {
   display: flex;
   flex-direction: column;
@@ -26,3 +27,119 @@ img {
 #container > div:nth-child(1) > div:nth-child(2){
   width: 500px;
 }
+=======
+header{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+#sale-section {
+  display: flex;
+  background: red;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+}
+
+#main-header{
+  display: flex;
+  flex-direction: row;
+  background: white;
+}
+
+#logo{
+  color: red;
+}
+
+
+  
+  
+  
+/* filtering section */
+.wrapper {
+  /* width: min(65rem, 100% - 3rem); */
+  margin-inline: auto;
+}
+
+/* .accordion-content {
+  padding-inline: 2rem;
+} */
+
+.accordion {
+  list-style: none;
+  min-width: 15rem;
+  width: 80%;
+}
+
+.accordion-heading {
+  border: 1px solid #4464c2;
+}
+
+.accordion-trigger {
+  width: 100%;
+  border: 0;
+
+  background-color: #fafafa;
+  color: #4464c2;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+
+  position: relative;
+
+  cursor: pointer;
+}
+
+.accordion-panel {
+  position: relative;
+  max-height: 0vh;
+  background: inherit;
+
+  visibility: hidden;
+
+  transition: 200ms ease;
+}
+
+.accordion-panel[aria-hidden="false"] {
+  visibility: visible;
+  padding: 1.2rem;
+  max-height: 100vh;
+}
+
+.accordion-trigger[aria-expanded="true"] {
+  background: #4464c2;
+  color: #fff;
+}
+
+.accordion-trigger:hover,
+.accordion-trigger:focus-visible {
+  background: #0e3b5e;
+  color: #fff;
+
+}
+
+.filter-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.typeCategory {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: 5%;
+  gap: 0.5rem;
+}
+
+.typeOfBooks {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: 5%;
+  gap: 0.5rem;
+}
+
