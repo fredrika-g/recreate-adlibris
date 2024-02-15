@@ -228,6 +228,7 @@ header{
 .section-container {
   display: flex;
   flex-direction: row;
+  align-items: center;
   border-bottom: 0.5px solid gray;
   gap: 20px;
   padding: 20px;
@@ -243,10 +244,33 @@ img {
 div.section-bookdetail{
   width: 500px;
 }
-button {
+div.section-bookdetail > h3{
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.section-author{
+  color: gray;
+  padding: 5px 0;
+}
+.price{
+  color: #ED1C25;
+  font-weight: 800;
+  padding-top: 10px;
+}
+#kartonnageBtn,
+#E-bokBtn,
+#ljudbokBtn{
   background: #ED1C25;
   color: white;
+  font-weight: 900;
   border: none;
-  padding: 5px 10px;
+  width:150px;
+  height: 30px;
   border-radius: 5px;
+  margin: 5px;
+}
+.button:hover{
+  background: #e04a52;
 }
